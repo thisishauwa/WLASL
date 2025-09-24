@@ -1,11 +1,85 @@
-start_kit/download_*.log
+# Log files
+*.log
 start_kit/missing.txt
+download_*.log
+
+# Raw and processed videos
 start_kit/raw_videos/
 start_kit/raw_videos_mp4/
 start_kit/videos/
+data/
+videos/
+*.mp4
+*.swf
+*.mkv
 
-*/__pycache__
+# Model weights and checkpoints
 code/I3D/archived/
+code/I3D/weights/
+code/I3D/checkpoints/
+code/TGCN/archived/
+code/TGCN/checkpoints/
 *.pt
+*.pth
+*.h5
+*.onnx
+*.pb
 
+# Python cache files
+__pycache__/
+*/__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+
+# Distribution / packaging
+*.egg-info/
+dist/
+build/
+.eggs/
+wheels/
+*.egg
+
+# Environment
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Archive files
 *.zip
+*.tar.gz
+*.rar
+*.7z
+
+# OS specific files
+.DS_Store
+.idea/
+.vscode/
+*~
+.*.swp
+.*.swo
+
+# Generated output files
+output/
+results/
+*.png
+*.jpg
+*.jpeg
+*.pdf
+
+# Project-specific files that may contain credentials
+config.ini
+secrets.json
+
+# Large data files
+*.npy
+*.npz
+*.pkl
+*.pickle
+
+# Keep example config files
+!example_config.ini
